@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import contactImg from "../public/assets/contact.jpg";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
