@@ -15,8 +15,8 @@ const property = () => {
           style={{ objectFit: "cover" }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 text-white p-2 ">
-          <h2 className="">Property Finder</h2>
-          <h3 className="">ReactJS / Tailwind / Firebase</h3>
+          <h2 className="">Notes-Blog App</h2>
+          <h3 className="">ReactJS / Serverless Functions / MongoDB</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 h-[60vh] ">
@@ -48,6 +48,9 @@ const property = () => {
             <div className="grid grid-cols-3 md:grid-cols-1 ">
               <p className="text-gray-600 py-2 flex items-center dark:text-[#F5F5F5]">
                 <RiRadioButtonFill className="pr-1" /> React
+              </p>
+              <p className="text-gray-600 py-2 flex items-center dark:text-[#F5F5F5]">
+                <RiRadioButtonFill className="pr-1" /> MongoDB
               </p>
               <p className="text-gray-600 py-2 flex items-center dark:text-[#F5F5F5]">
                 <RiRadioButtonFill className="pr-1" /> Serverless Functions
