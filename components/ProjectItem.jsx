@@ -4,9 +4,9 @@ import React from "react";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
-    <div className="relative flex items-center justify-center h-[50%] w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] dark:shadow-gray-500 dark:shadow-lg">
+    <div className="relative flex items-center justify-center lg:h-[50%] md:h-[50%] w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] dark:shadow-gray-500 dark:shadow-lg">
       <Image
-        className="rounded-xl group-hover:opacity-10 h-[100%] w-full object-cover"
+        className="rounded-xl group-hover:opacity-10 h-[100%] object-cover"
         src={backgroundImg}
         alt="/"
       />
