@@ -1,8 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import ABS from "../public/assets/projects/ABS.jpg";
-import { RiRadioButtonFill } from "react-icons/ri";
-import Link from "next/link";
+import Image from "next/image"
+import React from "react"
+import ABS from "../public/assets/projects/ABS.jpg"
+import { RiRadioButtonFill } from "react-icons/ri"
+import Link from "next/link"
+
 const property = () => {
   return (
     <div className="w-full dark:bg-[#121212] overflow-x-hidden">
@@ -19,7 +20,7 @@ const property = () => {
           <h3 className="">ReactJS / Serverless Functions / MongoDB</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 h-[60vh] ">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 lg:h-[60vh] h-screen">
         <div className="col-span-4">
           <p className="dark:text-[#7F8C8D]">Project</p>
           <h2 className="dark:text-[#7F8C8D]">Overview</h2>
@@ -63,7 +64,7 @@ const property = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default property;
+export default property

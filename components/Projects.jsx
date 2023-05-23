@@ -1,7 +1,7 @@
-import React from "react";
-import ProjectItem from "./ProjectItem";
-import webImg from "../public/assets/projects/website.jpg";
-import ABS from "../public/assets/projects/ABS.jpg";
+import React from "react"
+import ProjectItem from "./ProjectItem"
+import webImg from "../public/assets/projects/website.jpg"
+import ABS from "../public/assets/projects/ABS.jpg"
 
 const Projects = () => {
   return (
@@ -25,7 +25,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
