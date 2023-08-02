@@ -20,7 +20,7 @@ const property = () => {
           <h3 className="">ReactJS / Serverless Functions / MongoDB</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 lg:h-[60vh] h-screen">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 lg:h-[60vh]  h-screen">
         <div className="col-span-4">
           <p className="dark:text-[#7F8C8D]">Project</p>
           <h2 className="dark:text-[#7F8C8D]">Overview</h2>
@@ -29,7 +29,7 @@ const property = () => {
             notes and blogs. It has a dedicated admin portal where the admin
             will be able to create, update and delete the blogs and notes.
           </p>
-          <a href="https://abdullahsheriff.netlify.app/" target="_blank">
+          <a href="https://abdullahsheriff.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8 dark:shadow-none">
               Demo
             </button>
