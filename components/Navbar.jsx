@@ -1,35 +1,36 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { MdDarkMode } from "react-icons/md";
-import { BsSunFill } from "react-icons/bs";
-import { useRouter } from "next/router";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { MdDarkMode } from 'react-icons/md';
+import { BsSunFill } from 'react-icons/bs';
+import { useRouter } from 'next/router';
+import Logo from '../public/assets/ak-logo-fixed.png';
 
 const Navbar = ({ dark, setDark }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] = useState('#1f2937');
   const router = useRouter();
 
   useEffect(() => {
     if (
-      router.asPath === "/property" ||
-      router.asPath === "/crypto" ||
-      router.asPath === "/netflix" ||
-      router.asPath === "/twitch"
+      router.asPath === '/property' ||
+      router.asPath === '/crypto' ||
+      router.asPath === '/netflix' ||
+      router.asPath === '/twitch'
     ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
     } else {
       if (dark) {
-        setNavBg("#121212");
-        setLinkColor("#ecf0f3");
+        setNavBg('#121212');
+        setLinkColor('#ecf0f3');
       } else {
-        setNavBg("#ecf0f3");
-        setLinkColor("black");
+        setNavBg('#ecf0f3');
+        setLinkColor('black');
       }
     }
   }, [router, dark]);
@@ -42,7 +43,7 @@ const Navbar = ({ dark, setDark }) => {
         setShadow(false);
       }
     };
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener('scroll', handleShadow);
   }, []);
 
   const handleNav = () => {
@@ -54,18 +55,13 @@ const Navbar = ({ dark, setDark }) => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-lg z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? 'fixed w-full h-20 shadow-lg z-[100]'
+          : 'fixed w-full h-20 z-[100]'
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/assets/ak-logo-fixed.png"
-            alt="/"
-            width="100"
-            height="100"
-          />
+          <Image src={Logo} alt="/" width="100" height="100" />
         </Link>
         <div>
           <ul className="hidden md:flex" style={{ color: `${linkColor}` }}>
@@ -103,7 +99,7 @@ const Navbar = ({ dark, setDark }) => {
             </li>
           </ul>
           <div className="md:hidden cursor-pointer" onClick={handleNav}>
-            <AiOutlineMenu size={25} color={dark ? "white" : "black"} />
+            <AiOutlineMenu size={25} color={dark ? 'white' : 'black'} />
           </div>
         </div>
       </div>
@@ -112,8 +108,8 @@ const Navbar = ({ dark, setDark }) => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 dark:bg-[#121212] dark:text-[#F5F5F5] "
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 dark:bg-[#121212] dark:text-[#F5F5F5] '
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
           <div className="">
@@ -198,8 +194,8 @@ const Navbar = ({ dark, setDark }) => {
                   className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:shadow-gray-500"
                   onClick={() =>
                     window.open(
-                      "https://www.linkedin.com/in/akash-rangesh-3bb445249/",
-                      "_blank"
+                      'https://www.linkedin.com/in/akash-rangesh-3bb445249/',
+                      '_blank'
                     )
                   }
                 >
@@ -208,7 +204,7 @@ const Navbar = ({ dark, setDark }) => {
                 <div
                   className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:shadow-gray-500"
                   onClick={() =>
-                    window.open("https://github.com/CruxCoder7", "_blank")
+                    window.open('https://github.com/CruxCoder7', '_blank')
                   }
                 >
                   <FaGithub />
@@ -217,8 +213,8 @@ const Navbar = ({ dark, setDark }) => {
                   className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:shadow-gray-500"
                   onClick={() =>
                     window.open(
-                      "https://www.instagram.com/akash._.77/",
-                      "_blank"
+                      'https://www.instagram.com/akash._.77/',
+                      '_blank'
                     )
                   }
                 >
